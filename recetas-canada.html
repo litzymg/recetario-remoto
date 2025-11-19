@@ -3,86 +3,149 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>canada</title>
+  <title>Recetas Canadienses</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css.css" />
 </head>
 
 <body>
-  <div class="contenedor">
-    <h1><b>BIENVENIDOS</b></h1>
-    <h2>a su recetario de cocina canadiense favorito</h2>
-      <h2>aquí encontrarás las mejores recetas, fáciles y rapidas</h2>
-  </div>
-  <ul class="lista2">
-  <li><img src="imagenes/poutine.jpg"><h3><b>POUTINE: </b>
-   un tesoro canadiense que te fascinará</h3><br>
-  </li>
-  <p><b>Ingredientes:</b></p>
-  <p>
--10 papas grandes<br>
--2 cucharadas de harina<br>
--2 taza de caldo de carne<br>
--2 cucharadas de mantequilla<br>
--250 gramos de queso cheddar<br>
--Sal<br>
--Agua<br>
--Aceite para freír<br>
-</p>
-<p><b>Preparación: </b><br>
-    <br>
-PARA LAS PAPAS FRITAS<br>
-<br>
-1. Corta las papas en tiras.<br>
-2. Calienta una olla con aceite para freír a fuego alto. Una vez que el aceite esté listo,<br>
-sumerge una porción de las tiras de papa en la olla.
-Mantenlas friéndose de 2 a 4 minutos.<br>
-3. Saca las papas de la olla y colócalas sobre papel de cocina.<br>
-4. Repite los últimos pasos hasta que todas las papas cortadas estén fritas. Reserva.<br>
-<br>
-PARA EL GRAVY<br>
-<br>
-Derrite mantequilla en un sartén a fuego medio-alto.<br>
-Antes de que la mantequilla esté totalmente derretida, agrega la harina y mezcla los ingredientes<br>
-hasta que se forme una preparación dorada.<br>
-Vierte el caldo de carne poco a poco. No dejes de revolver la mezcla para evitar que se formen grumos.<br>
-Cocina la salsa gravy a fuego medio-bajo hasta que se espese. Sazona con sal y pimienta.<br>
-<br>
-PARA EL POUTINE<br>
-<br>
-Sirve las papas fritas de acuerdo a las porciones deseadas. Añade sal al gusto.<br>
-Agrega pedazos de queso cheddar. Estos pueden ser tan grandes o pequeños como desees.<br>
-Vierte la salsa gravy, mientras sigue caliente, sobre las papas.<br>
-<b>¡Disfruta!</b>
-</p>
-  <li><img src="imagenes/pastel_bayas.jpg"><h3><b>PASTEL DE BAYAS DE SASKATOON: </b>
-   Una baya con multiples virtudes </h3><br>
-   </li>
-  <p><b>Ingredientes:</b></p>
-  <p>
--170g de harina<br>
--120g azucar<br>
--85g de mantequilla<br>
--1 cda de vinagre blanco<br>
--1 cda de leche fría<br>
--1/2 kg de bayas frescas<br>
--25g de polvo de almendras<br>
--60ml de nata fresca<br>
--1 huevo<br>
-</p>
-<p><b>Preparación: </b><br>
-    <br>
-    Precaliente el horno a 220 grados C (425 grados F).<br>
-    Combine el azúcar y la harina en un tazón.<br>
-    Cocine a fuego lento las bayas y el agua en una cacerola grande<br>
-    durante 10 minutos. Agregue el jugo de limón y luego la mezcla de azúcar.<br>
-    Presiona una lámina de masa para tarta en el fondo de un molde para tarta de 23 cm. <br>
-    Vierte la mezcla de frutos rojos en el molde y distribuye trocitos de mantequilla por encima.<br>
-    Coloca la segunda masa de tarta encima; sella y haz el borde ondulado.<br>
-    Hornear en el horno precalentado durante 15 minutos. Reducir la temperatura del horno a 175 °C (350 °F)<br>
-   y hornear hasta que la corteza esté dorada, de 35 a 45 minutos más.<br>
-</ul>
+  <!-- Botón modo oscuro -->
+  <button id="modoBtn" class="modo-btn">🌙 Modo oscuro</button>
 
+  <header class="hero">
+    <h1>🍁 Recetario de Cocina Canadiense</h1>
+    <p>Descubre los sabores más tradicionales de Canadá</p>
+  </header>
+
+  <section class="grid">
+
+    <!-- Receta 1 -->
+    <div class="card">
+      <img src="imagenes/poutine.jpg" alt="Poutine">
+      <h3>🍟 Poutine</h3>
+      <p class="sub">El tesoro de Quebec</p>
+      <button class="toggleBtn">Ver receta</button>
+
+      <div class="info">
+        <h4>Ingredientes</h4>
+        <ul>
+          <li>Papas</li>
+          <li>Queso cheddar</li>
+          <li>Salsa gravy</li>
+        </ul>
+
+        <h4>Preparación</h4>
+        <p>Sumerge papas fritas, agrega queso y vierte gravy caliente.</p>
+      </div>
+    </div>
+
+    <!-- Receta 2 -->
+    <div class="card">
+      <img src="imagenes/tourtiere.jpg" alt="Tourtière">
+      <h3>🥧 Tourtière</h3>
+      <p class="sub">Pastel de carne tradicional</p>
+      <button class="toggleBtn">Ver receta</button>
+
+      <div class="info">
+        <h4>Ingredientes</h4>
+        <ul>
+          <li>Carne molida</li>
+          <li>Pasta para pay</li>
+          <li>Especias</li>
+        </ul>
+
+        <h4>Preparación</h4>
+        <p>Se cocina la carne con especias y se hornea en masa de pay.</p>
+      </div>
+    </div>
+
+    <!-- Receta 3 -->
+    <div class="card">
+      <img src="imagenes/buttertarts.jpg" alt="Butter Tarts">
+      <h3>🧁 Butter Tarts</h3>
+      <p class="sub">Dulce clásico canadiense</p>
+      <button class="toggleBtn">Ver receta</button>
+
+      <div class="info">
+        <h4>Ingredientes</h4>
+        <ul>
+          <li>Mantequilla</li>
+          <li>Azúcar morena</li>
+          <li>Pasitas</li>
+        </ul>
+
+        <h4>Preparación</h4>
+        <p>Se hornea una mezcla dulce dentro de masa suave.</p>
+      </div>
+    </div>
+
+    <!-- Receta 4 -->
+    <div class="card">
+      <img src="imagenes/nanaimo.jpg" alt="Nanaimo Bars">
+      <h3>🍫 Nanaimo Bars</h3>
+      <p class="sub">Postre sin horno</p>
+      <button class="toggleBtn">Ver receta</button>
+
+      <div class="info">
+        <h4>Ingredientes</h4>
+        <ul>
+          <li>Galleta</li>
+          <li>Coco</li>
+          <li>Chocolate</li>
+        </ul>
+
+        <h4>Preparación</h4>
+        <p>Capas de galleta, crema dulce y chocolate fundido.</p>
+      </div>
+    </div>
+
+    <!-- Receta 5 -->
+    <div class="card">
+      <img src="imagenes/bannock.jpg" alt="Bannock">
+      <h3>🥖 Bannock</h3>
+      <p class="sub">Pan tradicional indígena</p>
+      <button class="toggleBtn">Ver receta</button>
+
+      <div class="info">
+        <h4>Ingredientes</h4>
+        <ul>
+          <li>Harina</li>
+          <li>Agua</li>
+          <li>Sal</li>
+        </ul>
+
+        <h4>Preparación</h4>
+        <p>Masa simple que se fríe o se hornea.</p>
+      </div>
+    </div>
+
+    <!-- Receta 6 -->
+    <div class="card">
+      <img src="imagenes/maplecookies.jpg" alt="Maple Cookies">
+      <h3>🍁 Galletas de Maple</h3>
+      <p class="sub">Sabor canadiense puro</p>
+      <button class="toggleBtn">Ver receta</button>
+
+      <div class="info">
+        <h4>Ingredientes</h4>
+        <ul>
+          <li>Jarabe de maple</li>
+          <li>Harina</li>
+          <li>Mantequilla</li>
+        </ul>
+
+        <h4>Preparación</h4>
+        <p>Galletas dulces infusionadas con maple.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Botón hacia arriba -->
+  <button id="arribaBtn" class="arriba-btn">⬆</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
