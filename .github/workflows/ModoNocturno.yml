@@ -1,0 +1,41 @@
+name: Modo Nocturno
+
+on:
+  schedule:
+    # 23:59 hora local (CDMX) = 05:59 UTC
+    - cron: '59 5 * * *'
+    # 01:59 hora local = 07:59 UTC
+    - cron: '59 7 * * *'
+    # 03:59 hora local = 09:59 UTC
+    - cron: '59 9 * * *'
+    # 05:59 hora local = 11:59 UTC
+    - cron: '59 11 * * *'
+
+jobs:
+  modo-nocturno:
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/stale@v5
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+          # Mensaje al cerrar issues/PRs
+          close-issue-message: 'Modo Nocturno ACTIVADO'
+          close-pr-message: 'Modo Nocturno ACTIVADO'
+
+          # ⚠ Desactivar totalmente el marcado como "inactivo"
+          days-before-stale: -1
+          stale-issue-label: ''
+          stale-pr-label: ''
+
+          # Cerrar inmediatamente en cada ejecución nocturna
+          days-before-close: 0
+
+          # Opcional: borrar branches ligados a PR cerrados
+          delete-branch: true
